@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import 'config';
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: $light-green;
+}
+
+h1, h2, h3, h4, h5, h6, {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  line-height: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+h1, h3 {
+  color: $dark-green;
+  text-shadow: $shadow-light;
+}
+
+h2 {
+  text-shadow: $shadow-medium;
+}
+
+.navbar {
+  background-color: $dark-green;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  a {
+    color: #fff;
+    margin: .8rem;
+    text-decoration: none;
+    a:hover {
+      color: #dadada;
+    }
+  }
+  &-brand {
+    font-size: .8rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &-toggle-icon {
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 1.8rem;
+  }
+  .nav-item {
+    padding-bottom: 2rem;
+    font-size: 1.4rem;
+    border-bottom: .1rem solid #fff;
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+
+.container {
+  .col {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.padding{
+  padding-bottom: 1rem;
+}
+
+hr.light {
+  width: 80%;
+  border-top: .1rem solid #fff;
+  margin: .5rem auto;
+}
+
+.intro {
+  padding-top: 2rem;
+  background-color: #fff;
+  p {
+    font-family: 'PT-sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: $light-green;
+  }
+  .foto {
+    width: 50%;
+    margin-bottom: 1.5rem;
+    clip-path: circle();
+  }
+}
+
+.chisono {
+  padding-top: 1rem;
+}
+
+.section {
+  border-radius: .1rem;
+  padding: 1rem;
+  margin: 1rem;
+  color: $text-color;
+  background-color: #fff;
+  a {
+    color: $light-green;
+  }
+}
+
+.footer {
+  padding-bottom: 3rem;
+  a {
+    color: #fff;
+    font-size: 1.7rem;
+    &:hover {
+      color: $dark-green;
+    }
+  }
+  .social {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  .mail {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+}
+
+
+@import 'desktop';

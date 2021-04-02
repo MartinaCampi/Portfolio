@@ -1,0 +1,61 @@
+@media (min-width: 760px) {
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .navbar {
+    padding: 0.03rem;
+    align-content: center;
+    &-brand {
+      margin-left: 1rem;
+    }
+    .nav-item {
+      padding: 0;
+      margin-right: 2rem;
+      font-size: 1rem;
+      border-bottom: none;
+      text-shadow: $shadow-dark;
+    }
+  }
+
+  hr.light {
+    margin: 1.5rem auto;
+  }
+
+  .intro {
+    .foto {
+      width: 35%;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .progetti {
+    width: 100%;
+    padding: 0;
+  }
+
+  .section {
+    padding: 2rem;
+    margin: 2rem;
+  }
+
+  .intro,
+  .chisono,
+  .footer {
+    width: 70%;
+  }
+
+  .footer {
+    h2 {
+      margin-bottom: 4rem;
+    }
+    .social {
+      margin-bottom: 3rem;
+      a {
+        font-size: 2.2rem;
+      }
+    }
+  }
+
+}
